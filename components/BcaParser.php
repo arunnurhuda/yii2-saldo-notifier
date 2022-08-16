@@ -8,7 +8,7 @@ class BcaParser
     function __construct()
     {
         
-        $this->conf['ip']   = json_decode(file_get_contents('http://myjsonip.appspot.com/'))->ip;
+        $this->conf['ip']   = json_decode(file_get_contents('https://ipv4.jsonip.com'))->ip;
         $this->conf['time'] = time() + (3600 * 14);
         $this->conf['path'] = Yii::getAlias('@app/cookie');
         
